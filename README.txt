@@ -16,8 +16,13 @@ ESTRUTURA DE PASTAS:
 COMO CONFIGURAR:
 1. Extraia o ZIP.
 2. Copie a pasta 'iqoptionapi' para dentro da pasta raiz extraída (no mesmo nível do main.py).
-3. Configure IQ_EMAIL e IQ_PASSWORD somente em variáveis de ambiente ou em um
-   arquivo .env local não compartilhado. O padrão é IQ_ACCOUNT_TYPE=PRACTICE.
+3. Na primeira instalação pelo Git, copie config.example.py para config.py e
+   .env.example para .env. No PowerShell, com o projeto como diretorio atual:
+   Copy-Item config.example.py config.py
+   Copy-Item .env.example .env
+   Edite o .env com suas proprias credenciais. Ambos os arquivos locais sao
+   ignorados pelo Git. Nao sobrescreva um config.py ou .env local ja existente.
+   O padrao do modelo e IQ_ACCOUNT_TYPE=PRACTICE; o bot inicia automaticamente.
 4. REAL exige IQ_ACCOUNT_TYPE=REAL e IQ_ENABLE_REAL_TRADING=YES explicitamente.
    A aplicação não alterna de conta durante uma sessão.
 5. Instale as dependências:
