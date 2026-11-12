@@ -1,0 +1,4 @@
+iqoptionapi
+python-dotenv
+numpy
+tzdata

@@ -1,0 +1,29 @@
+# Ambientes virtuais e arquivos Python gerados
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Credenciais e configuracao local
+.env
+.env.*
+!.env.example
+config.py
+
+# Dados e logs locais
+logs/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+historico.json
+relatorio.json
+
+# Copias locais
+*.backup_*
